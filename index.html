@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LauncherX Pro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">LauncherX Pro</div>
+        <nav>
+            <ul>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#features">Características</a></li>
+                <li><a href="#download">Descargar</a></li>
+                <li><a href="#testimonials">Testimonios</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="particles-js" class="particles"></div>
+
+    <section class="hero">
+        <h1>¡Bienvenidos a LauncherX Pro!</h1>
+        <p>Gestiona tus aplicaciones como nunca antes.</p>
+        <a href="#download">Descargar Ahora</a>
+    </section>
+
+    <section id="features">
+        <h2>Características</h2>
+        <div class="features">
+            <div class="feature-card" data-aos="fade-up">
+                <h3>Interfaz Amigable</h3>
+                <p>Navega con facilidad y optimiza tu tiempo.</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <h3>Compatibilidad Extensa</h3>
+                <p>Funciona en Windows, macOS y más.</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                <h3>Actualizaciones Constantes</h3>
+                <p>Mantente al día con las últimas funciones.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download-section">
+        <h2>Descarga LauncherX Pro</h2>
+        <p>Selecciona tu sistema operativo para comenzar la descarga.</p>
+        <a href="#" onclick="showPopup('Windows')" download>Descargar para Windows</a>
+        <a href="#" onclick="showPopup('macOS')" download>Descargar para macOS</a>
+        <a href="#" onclick="showPopup('Linux')" download>Descargar para Linux</a>
+    </section>
+
+    <section id="testimonials" class="testimonials" style="display: none;">
+        <h2>Testimonios</h2>
+        <div class="testimonial" data-aos="fade-right">
+            <p>"¡Increíble! Simplifica mi flujo de trabajo diario."</p>
+            <cite>- Usuario Satisfecho</cite>
+        </div>
+        <div class="testimonial" data-aos="fade-left">
+            <p>"El mejor launcher que he probado, 10/10."</p>
+            <cite>- María López</cite>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-item" data-aos="fade-up">
+            <h3>¿Es gratis?</h3>
+            <p>Sí, puedes descargarlo sin costo alguno.</p>
+        </div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+            <h3>¿Es seguro?</h3>
+            <p>¡Por supuesto! Cumplimos con los estándares de seguridad más altos.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Launcher Pro. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles-config.json', function() {
+            console.log('Particles.js cargado correctamente.');
+        });
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+    <script>
+        function showPopup(system) {
+            alert(`Launcher no disponible para ${system}, pronto se lanzará el launcher.`);
+        }
+    </script>
+</body>
+</html>
